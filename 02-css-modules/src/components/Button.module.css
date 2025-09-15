@@ -1,0 +1,6 @@
+.btn{padding:10px 14px;border-radius:8px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:transform var(--transition),box-shadow var(--transition),opacity var(--transition)}
+.btn:active{transform:translateY(1px)}
+.btn:disabled{opacity:0.6;cursor:not-allowed}
+.solid{background:var(--primary);color:white;border:1px solid transparent}
+.outline{background:transparent;color:var(--text);border:1px solid rgba(0,0,0,0.08)}
+.ghost{background:transparent;color:var(--text);border:1px dashed transparent}

@@ -1,0 +1,4 @@
+.nav{position:sticky;top:0;background:var(--surface);padding:12px 24px;box-shadow:var(--shadow-sm);z-index:50}
+.inner{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto}
+.logoBox{display:flex;align-items:center;gap:12px}
+.tag{background:var(--accent);color:white;padding:4px 8px;border-radius:999px;font-size:12px}

@@ -1,0 +1,7 @@
+.card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden;transition:transform var(--transition),box-shadow var(--transition)}
+.card:focus-within,.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.imageWrap{width:100%;aspect-ratio:1/1;background:linear-gradient(90deg,#eee,#f6f6f6);display:block}
+.content{padding:12px}
+.title{font-weight:700;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.meta{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:14px}
+.tag{background:var(--accent);color:white;padding:4px 8px;border-radius:999px;font-size:12px}
