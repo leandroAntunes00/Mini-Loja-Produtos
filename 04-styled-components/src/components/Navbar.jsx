@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 import Button from './Button'
+import LogoImg from '../assets/react.svg'
+
+const Left = styled.div`display:flex;align-items:center;gap:12px;`
+const BrandBox = styled.div`width:40px;height:40px;background:${p=>p.theme.primary};border-radius:8px;flex:0 0 40px`
+const Right = styled.div`display:flex;align-items:center;gap:12px;`
+const Tag = styled.div`background:${p=>p.theme.accent};color:white;padding:4px 8px;border-radius:999px`
 
 const Header = styled.header`
   position:sticky; top:0; background:${p=>p.theme.surface}; padding:12px 24px; box-shadow:0 1px 2px rgba(0,0,0,0.06); z-index:50;
@@ -8,14 +14,15 @@ const Inner = styled.div`display:flex;align-items:center;justify-content:space-b
 
 export default function Navbar({theme,onToggle,cartCount=0}){
   return (
-    <Header>
-      <Inner>
-        <div style={{display:'flex',alignItems:'center',gap:12}}><div style={{width:40,height:40,background:'#2563eb',borderRadius:8}} aria-hidden></div><strong>Loja</strong></div>
-        <div style={{display:'flex',alignItems:'center',gap:12}}>
-          <Button variant="ghost" onClick={onToggle}>{theme==='dark'?'🌙':'☀️'}</Button>
-          <div role="status" aria-label={`Itens no carrinho: ${cartCount}`} style={{background:'var(--accent)',color:'white',padding:'4px 8px',borderRadius:999}}>{cartCount}</div>
-        </div>
-      </Inner>
-    </Header>
+    <>
+      <Left>
+        <img src={LogoImg} alt="logo" className="logo react" style={{height:40}} />
+        <strong>Loja</strong>
+      </Left>
+      <Right>
+        <Button variant="ghost" onClick={onToggle}>{theme==='dark'? '🌙' : '☀️'}</Button>
+        <Tag role="status" aria-label={`Itens no carrinho: ${cartCount}`}>{cartCount}</Tag>
+      </Right>
+    </>
   )
 }

@@ -1,6 +1,31 @@
 export const light = {
-  bg:'#fff', surface:'#fff', text:'#0f172a', muted:'#6b7280', primary:'#2563eb', accent:'#7c3aed', radius:'12px', gap:'16px'
+  bg: '#ffffff',
+  surface: '#ffffff',
+  text: '#0f172a',
+  muted: '#6b7280',
+  primary: '#2563eb',
+  accent: '#7c3aed',
+  success: '#16a34a',
+  danger: '#dc2626',
+  radius: '12px',
+  gap: '16px',
+  shadowSm: '0 1px 2px rgba(2, 6, 23, 0.06)',
+  shadowMd: '0 6px 18px rgba(2, 6, 23, 0.08)',
+  transition: '200ms',
 }
+
 export const dark = {
-  bg:'#0b1220', surface:'#0f1724', text:'#e6eef8', muted:'#9aa6b2', primary:'#60a5fa', accent:'#9f7aea', radius:'12px', gap:'16px'
+  bg: '#0b1220',
+  surface: '#0f1724',
+  text: '#e6eef8',
+  muted: '#9aa6b2',
+  primary: '#60a5fa',
+  accent: '#9f7aea',
+  success: '#34d399',
+  danger: '#fb7185',
+  radius: '12px',
+  gap: '16px',
+  shadowSm: '0 1px 2px rgba(255, 255, 255, 0.03)',
+  shadowMd: '0 6px 18px rgba(2, 6, 23, 0.25)',
+  transition: '200ms',
 }
