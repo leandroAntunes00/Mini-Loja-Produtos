@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './index.css'
+import './App.css'
 import productsData from './data/products'
 
 import ProductCard from './components/ProductCard'

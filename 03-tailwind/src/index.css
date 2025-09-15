@@ -1,6 +1,83 @@
-@import './App.css';
-
-/* Tailwind directives - keep after global tokens so Tailwind utilities can use CSS variables */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+:root{
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --accent: #7c3aed;
+  --radius: 12px;
+  --gap: 16px;
+  --shadow-sm: 0 1px 2px rgba(2,6,23,0.06);
+  --shadow-md: 0 6px 18px rgba(2,6,23,0.08);
+  --transition: 200ms ease;
+}
+
+:root.dark{
+  --bg: #0b1220;
+  --surface: #0f1724;
+  --text: #e6eef8;
+  --muted: #9aa6b2;
+  --primary: #60a5fa;
+  --accent: #9f7aea;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Tipografia e corpo */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background var(--transition),
+    color var(--transition);
+}
+
+
+
+/* Focus ring global */
+:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+

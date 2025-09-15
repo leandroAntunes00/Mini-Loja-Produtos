@@ -4,7 +4,7 @@ import Button from './Button'
 export default function ProductCard({ product, onAdd, loading = false }) {
   return (
     <article tabIndex={0} aria-labelledby={`title-${product.id}`} className="bg-surface dark:bg-surface rounded-lg shadow-sm overflow-hidden hover:-translate-y-1 transition-transform">
-      <div className="w-full aspect-square h-48 md:h-56 bg-bg overflow-hidden">
+  <div className="w-full aspect-square bg-bg overflow-hidden product-thumb">
         {loading ? (
           <div className="h-full w-full animate-pulse bg-muted" />
         ) : (
