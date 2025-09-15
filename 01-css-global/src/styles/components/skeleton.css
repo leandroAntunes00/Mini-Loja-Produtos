@@ -1,0 +1,13 @@
+/* Utilitários para skeletons de componentes */
+.skeleton-fill {
+  width: 100%;
+  height: 100%;
+}
+
+/* variações usuais */
+.skeleton-inline {
+  display: inline-block;
+  width: 2em;
+  height: 1em;
+  border-radius: 6px;
+}

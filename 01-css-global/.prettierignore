@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.git
+.gitignore
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+.vscode
+.idea
+/*.log
