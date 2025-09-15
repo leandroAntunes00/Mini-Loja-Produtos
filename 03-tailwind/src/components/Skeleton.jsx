@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function Skeleton(){
-  return <div className="animate-pulse bg-gray-200 h-full w-full" aria-hidden />
+export default function Skeleton({ className = '' }) {
+  return <div className={`animate-pulse bg-muted ${className}`} aria-hidden="true" />
 }

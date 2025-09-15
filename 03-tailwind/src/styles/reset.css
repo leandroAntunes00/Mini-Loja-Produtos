@@ -1,0 +1,24 @@
+/* Reset básico aplicado globalmente */
+/* Este arquivo contém reset e regras essenciais que devem ser carregadas primeiro */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Evita que imagens e vídeos cresçam além do contêiner */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
