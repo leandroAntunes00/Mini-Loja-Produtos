@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../assets/react.svg';
 import '../styles/components/navbar.css';
 
 export default function Navbar({ theme, onToggle, cartCount = 0 }) {
@@ -7,7 +8,7 @@ export default function Navbar({ theme, onToggle, cartCount = 0 }) {
   return (
     <>
       <div className="navbar-left">
-        <div className="brand-box" aria-hidden></div>
+        <img src={Logo} alt="React logo" className="logo react" />
         <strong>Loja</strong>
       </div>
       <div className="navbar-right">
