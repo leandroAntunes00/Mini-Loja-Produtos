@@ -1,4 +1,27 @@
-.nav{position:sticky;top:0;background:var(--surface);padding:12px 24px;box-shadow:var(--shadow-sm);z-index:50}
-.inner{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto}
-.logoBox{display:flex;align-items:center;gap:12px}
-.tag{background:var(--accent);color:white;padding:4px 8px;border-radius:999px;font-size:12px}
+.nav {
+  background: transparent;
+  width: 100%;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+.logoBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tag {
+  background: var(--surface);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
