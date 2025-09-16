@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./Navbar";
 
 export default function Header(props) {
   return (
@@ -8,5 +8,5 @@ export default function Header(props) {
         <Navbar {...props} />
       </div>
     </header>
-  )
+  );
 }
