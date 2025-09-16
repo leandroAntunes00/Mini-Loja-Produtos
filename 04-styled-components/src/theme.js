@@ -12,7 +12,7 @@ export const light = {
   shadowSm: '0 1px 2px rgba(2, 6, 23, 0.06)',
   shadowMd: '0 6px 18px rgba(2, 6, 23, 0.08)',
   transition: '200ms',
-}
+};
 
 export const dark = {
   bg: '#0b1220',
@@ -28,4 +28,4 @@ export const dark = {
   shadowSm: '0 1px 2px rgba(255, 255, 255, 0.03)',
   shadowMd: '0 6px 18px rgba(2, 6, 23, 0.25)',
   transition: '200ms',
-}
+};
