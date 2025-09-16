@@ -3,7 +3,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Use CSS variables so Tailwind respects light/dark tokens from tokens.css
         bg: 'var(--bg)',
         surface: 'var(--surface)',
         text: 'var(--text)',

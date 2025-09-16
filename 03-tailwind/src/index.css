@@ -1,8 +1,8 @@
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 
 :root{
@@ -27,6 +27,16 @@
   --primary: #60a5fa;
   --accent: #9f7aea;
 }
+
+/* @theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+} */
+
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
