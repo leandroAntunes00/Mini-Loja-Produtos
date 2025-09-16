@@ -41,7 +41,7 @@ export default function App() {
         <h1 className="text-2xl font-bold" style={{ marginTop: 0 }}>
           Produtos
         </h1>
-        <section className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4" aria-live="polite">
+        <section className="grid gap-4 mt-4" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }} aria-live="polite">
           {productsData.map((prod) => (
             <ProductCard key={prod.id} product={prod} onAdd={handleAdd} loading={loading} />
           ))}
